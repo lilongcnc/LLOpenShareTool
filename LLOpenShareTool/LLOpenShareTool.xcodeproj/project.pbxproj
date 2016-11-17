@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		89AF65701DDD568200C3CD84 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AF656F1DDD568200C3CD84 /* main.m */; };
+		89AF65731DDD568200C3CD84 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AF65721DDD568200C3CD84 /* AppDelegate.m */; };
+		89AF65761DDD568200C3CD84 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AF65751DDD568200C3CD84 /* ViewController.m */; };
+		89AF65791DDD568200C3CD84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89AF65771DDD568200C3CD84 /* Main.storyboard */; };
+		89AF657B1DDD568200C3CD84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89AF657A1DDD568200C3CD84 /* Assets.xcassets */; };
+		89AF657E1DDD568200C3CD84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89AF657C1DDD568200C3CD84 /* LaunchScreen.storyboard */; };
+		89AF65891DDD568200C3CD84 /* LLOpenShareToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AF65881DDD568200C3CD84 /* LLOpenShareToolTests.m */; };
+		89AF65941DDD568200C3CD84 /* LLOpenShareToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AF65931DDD568200C3CD84 /* LLOpenShareToolUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		89AF65851DDD568200C3CD84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89AF65631DDD568200C3CD84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89AF656A1DDD568200C3CD84;
+			remoteInfo = LLOpenShareTool;
+		};
+		89AF65901DDD568200C3CD84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89AF65631DDD568200C3CD84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89AF656A1DDD568200C3CD84;
+			remoteInfo = LLOpenShareTool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		89AF656B1DDD568200C3CD84 /* LLOpenShareTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLOpenShareTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		89AF656F1DDD568200C3CD84 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		89AF65711DDD568200C3CD84 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		89AF65721DDD568200C3CD84 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		89AF65741DDD568200C3CD84 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		89AF65751DDD568200C3CD84 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		89AF65781DDD568200C3CD84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		89AF657A1DDD568200C3CD84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		89AF657D1DDD568200C3CD84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		89AF657F1DDD568200C3CD84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89AF65841DDD568200C3CD84 /* LLOpenShareToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LLOpenShareToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		89AF65881DDD568200C3CD84 /* LLOpenShareToolTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLOpenShareToolTests.m; sourceTree = "<group>"; };
+		89AF658A1DDD568200C3CD84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89AF658F1DDD568200C3CD84 /* LLOpenShareToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LLOpenShareToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		89AF65931DDD568200C3CD84 /* LLOpenShareToolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLOpenShareToolUITests.m; sourceTree = "<group>"; };
+		89AF65951DDD568200C3CD84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		89AF65681DDD568200C3CD84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89AF65811DDD568200C3CD84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89AF658C1DDD568200C3CD84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		89AF65621DDD568200C3CD84 = {
+			isa = PBXGroup;
+			children = (
+				89AF656D1DDD568200C3CD84 /* LLOpenShareTool */,
+				89AF65871DDD568200C3CD84 /* LLOpenShareToolTests */,
+				89AF65921DDD568200C3CD84 /* LLOpenShareToolUITests */,
+				89AF656C1DDD568200C3CD84 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		89AF656C1DDD568200C3CD84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				89AF656B1DDD568200C3CD84 /* LLOpenShareTool.app */,
+				89AF65841DDD568200C3CD84 /* LLOpenShareToolTests.xctest */,
+				89AF658F1DDD568200C3CD84 /* LLOpenShareToolUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		89AF656D1DDD568200C3CD84 /* LLOpenShareTool */ = {
+			isa = PBXGroup;
+			children = (
+				89AF65711DDD568200C3CD84 /* AppDelegate.h */,
+				89AF65721DDD568200C3CD84 /* AppDelegate.m */,
+				89AF65741DDD568200C3CD84 /* ViewController.h */,
+				89AF65751DDD568200C3CD84 /* ViewController.m */,
+				89AF65771DDD568200C3CD84 /* Main.storyboard */,
+				89AF657A1DDD568200C3CD84 /* Assets.xcassets */,
+				89AF657C1DDD568200C3CD84 /* LaunchScreen.storyboard */,
+				89AF657F1DDD568200C3CD84 /* Info.plist */,
+				89AF656E1DDD568200C3CD84 /* Supporting Files */,
+			);
+			path = LLOpenShareTool;
+			sourceTree = "<group>";
+		};
+		89AF656E1DDD568200C3CD84 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				89AF656F1DDD568200C3CD84 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		89AF65871DDD568200C3CD84 /* LLOpenShareToolTests */ = {
+			isa = PBXGroup;
+			children = (
+				89AF65881DDD568200C3CD84 /* LLOpenShareToolTests.m */,
+				89AF658A1DDD568200C3CD84 /* Info.plist */,
+			);
+			path = LLOpenShareToolTests;
+			sourceTree = "<group>";
+		};
+		89AF65921DDD568200C3CD84 /* LLOpenShareToolUITests */ = {
+			isa = PBXGroup;
+			children = (
+				89AF65931DDD568200C3CD84 /* LLOpenShareToolUITests.m */,
+				89AF65951DDD568200C3CD84 /* Info.plist */,
+			);
+			path = LLOpenShareToolUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		89AF656A1DDD568200C3CD84 /* LLOpenShareTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89AF65981DDD568200C3CD84 /* Build configuration list for PBXNativeTarget "LLOpenShareTool" */;
+			buildPhases = (
+				89AF65671DDD568200C3CD84 /* Sources */,
+				89AF65681DDD568200C3CD84 /* Frameworks */,
+				89AF65691DDD568200C3CD84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LLOpenShareTool;
+			productName = LLOpenShareTool;
+			productReference = 89AF656B1DDD568200C3CD84 /* LLOpenShareTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		89AF65831DDD568200C3CD84 /* LLOpenShareToolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89AF659B1DDD568200C3CD84 /* Build configuration list for PBXNativeTarget "LLOpenShareToolTests" */;
+			buildPhases = (
+				89AF65801DDD568200C3CD84 /* Sources */,
+				89AF65811DDD568200C3CD84 /* Frameworks */,
+				89AF65821DDD568200C3CD84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				89AF65861DDD568200C3CD84 /* PBXTargetDependency */,
+			);
+			name = LLOpenShareToolTests;
+			productName = LLOpenShareToolTests;
+			productReference = 89AF65841DDD568200C3CD84 /* LLOpenShareToolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		89AF658E1DDD568200C3CD84 /* LLOpenShareToolUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89AF659E1DDD568200C3CD84 /* Build configuration list for PBXNativeTarget "LLOpenShareToolUITests" */;
+			buildPhases = (
+				89AF658B1DDD568200C3CD84 /* Sources */,
+				89AF658C1DDD568200C3CD84 /* Frameworks */,
+				89AF658D1DDD568200C3CD84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				89AF65911DDD568200C3CD84 /* PBXTargetDependency */,
+			);
+			name = LLOpenShareToolUITests;
+			productName = LLOpenShareToolUITests;
+			productReference = 89AF658F1DDD568200C3CD84 /* LLOpenShareToolUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		89AF65631DDD568200C3CD84 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "李龙";
+				TargetAttributes = {
+					89AF656A1DDD568200C3CD84 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					89AF65831DDD568200C3CD84 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 89AF656A1DDD568200C3CD84;
+					};
+					89AF658E1DDD568200C3CD84 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 89AF656A1DDD568200C3CD84;
+					};
+				};
+			};
+			buildConfigurationList = 89AF65661DDD568200C3CD84 /* Build configuration list for PBXProject "LLOpenShareTool" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 89AF65621DDD568200C3CD84;
+			productRefGroup = 89AF656C1DDD568200C3CD84 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				89AF656A1DDD568200C3CD84 /* LLOpenShareTool */,
+				89AF65831DDD568200C3CD84 /* LLOpenShareToolTests */,
+				89AF658E1DDD568200C3CD84 /* LLOpenShareToolUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		89AF65691DDD568200C3CD84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89AF657E1DDD568200C3CD84 /* LaunchScreen.storyboard in Resources */,
+				89AF657B1DDD568200C3CD84 /* Assets.xcassets in Resources */,
+				89AF65791DDD568200C3CD84 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89AF65821DDD568200C3CD84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89AF658D1DDD568200C3CD84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		89AF65671DDD568200C3CD84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89AF65761DDD568200C3CD84 /* ViewController.m in Sources */,
+				89AF65731DDD568200C3CD84 /* AppDelegate.m in Sources */,
+				89AF65701DDD568200C3CD84 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89AF65801DDD568200C3CD84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89AF65891DDD568200C3CD84 /* LLOpenShareToolTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89AF658B1DDD568200C3CD84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89AF65941DDD568200C3CD84 /* LLOpenShareToolUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		89AF65861DDD568200C3CD84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 89AF656A1DDD568200C3CD84 /* LLOpenShareTool */;
+			targetProxy = 89AF65851DDD568200C3CD84 /* PBXContainerItemProxy */;
+		};
+		89AF65911DDD568200C3CD84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 89AF656A1DDD568200C3CD84 /* LLOpenShareTool */;
+			targetProxy = 89AF65901DDD568200C3CD84 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		89AF65771DDD568200C3CD84 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89AF65781DDD568200C3CD84 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		89AF657C1DDD568200C3CD84 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89AF657D1DDD568200C3CD84 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		89AF65961DDD568200C3CD84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		89AF65971DDD568200C3CD84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		89AF65991DDD568200C3CD84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LLOpenShareTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhuoyunkeji.LLOpenShareTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		89AF659A1DDD568200C3CD84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LLOpenShareTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhuoyunkeji.LLOpenShareTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		89AF659C1DDD568200C3CD84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LLOpenShareToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhuoyunkeji.LLOpenShareToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LLOpenShareTool.app/LLOpenShareTool";
+			};
+			name = Debug;
+		};
+		89AF659D1DDD568200C3CD84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LLOpenShareToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhuoyunkeji.LLOpenShareToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LLOpenShareTool.app/LLOpenShareTool";
+			};
+			name = Release;
+		};
+		89AF659F1DDD568200C3CD84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LLOpenShareToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhuoyunkeji.LLOpenShareToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LLOpenShareTool;
+			};
+			name = Debug;
+		};
+		89AF65A01DDD568200C3CD84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LLOpenShareToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhuoyunkeji.LLOpenShareToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LLOpenShareTool;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		89AF65661DDD568200C3CD84 /* Build configuration list for PBXProject "LLOpenShareTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89AF65961DDD568200C3CD84 /* Debug */,
+				89AF65971DDD568200C3CD84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89AF65981DDD568200C3CD84 /* Build configuration list for PBXNativeTarget "LLOpenShareTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89AF65991DDD568200C3CD84 /* Debug */,
+				89AF659A1DDD568200C3CD84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		89AF659B1DDD568200C3CD84 /* Build configuration list for PBXNativeTarget "LLOpenShareToolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89AF659C1DDD568200C3CD84 /* Debug */,
+				89AF659D1DDD568200C3CD84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		89AF659E1DDD568200C3CD84 /* Build configuration list for PBXNativeTarget "LLOpenShareToolUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89AF659F1DDD568200C3CD84 /* Debug */,
+				89AF65A01DDD568200C3CD84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 89AF65631DDD568200C3CD84 /* Project object */;
+}
