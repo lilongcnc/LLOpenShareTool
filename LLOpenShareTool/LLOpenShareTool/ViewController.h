@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+#define CGMMainScreenWidth            ([[UIScreen mainScreen] bounds].size.width)
+#define CGMMainScreenHeight           ([[UIScreen mainScreen] bounds].size.height)
+
 @interface ViewController : UIViewController
 
 
