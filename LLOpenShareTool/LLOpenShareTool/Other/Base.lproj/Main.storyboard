@@ -35,11 +35,20 @@
                                     <action selector="registerShareConfig:" destination="BYZ-38-t0r" eventType="touchUpInside" id="feZ-q0-Ecm"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FfS-ZJ-fzn">
+                                <rect key="frame" x="156" y="320" width="62" height="30"/>
+                                <state key="normal" title="微信支付"/>
+                                <connections>
+                                    <action selector="WecahtPayBtnOnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eKd-Ig-Ykv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Flf-b1-W4h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Eze-mc-pHV"/>
+                            <constraint firstItem="FfS-ZJ-fzn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h1h-SQ-suL"/>
                             <constraint firstItem="nHz-md-DJi" firstAttribute="top" secondItem="Flf-b1-W4h" secondAttribute="bottom" constant="20" id="hJJ-QV-b0A"/>
+                            <constraint firstItem="FfS-ZJ-fzn" firstAttribute="top" secondItem="nHz-md-DJi" secondAttribute="bottom" constant="8" id="lvb-M7-DdR"/>
                             <constraint firstItem="nHz-md-DJi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-36.5" id="pVa-TI-La8"/>
                             <constraint firstItem="nHz-md-DJi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vV4-pr-y30"/>
                         </constraints>
@@ -47,7 +56,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="110" y="119"/>
+            <point key="canvasLocation" x="-442.39999999999998" y="112.89355322338831"/>
         </scene>
     </scenes>
 </document>

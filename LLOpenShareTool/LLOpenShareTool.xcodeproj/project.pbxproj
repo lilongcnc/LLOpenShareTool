@@ -48,10 +48,10 @@
 		89AF65F91DDD5AC500C3CD84 /* OpenShare+Renren.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AF65F01DDD5AC500C3CD84 /* OpenShare+Renren.m */; };
 		89AF65FA1DDD5AC500C3CD84 /* OpenShare+Weibo.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AF65F21DDD5AC500C3CD84 /* OpenShare+Weibo.m */; };
 		89AF65FB1DDD5AC500C3CD84 /* OpenShare+Weixin.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AF65F41DDD5AC500C3CD84 /* OpenShare+Weixin.m */; };
-		89AF66001DDD751600C3CD84 /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89AF65FC1DDD751600C3CD84 /* iconfont.ttf */; };
-		89AF66011DDD751600C3CD84 /* logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 89AF65FD1DDD751600C3CD84 /* logo.gif */; };
-		89AF66021DDD751600C3CD84 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 89AF65FE1DDD751600C3CD84 /* logo.png */; };
-		89AF66031DDD751600C3CD84 /* test.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 89AF65FF1DDD751600C3CD84 /* test.pdf */; };
+		89AF66061DDD82FB00C3CD84 /* LLOpenShareTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 89AF66051DDD82FB00C3CD84 /* LLOpenShareTool.m */; };
+		89AF660F1DDDA4A300C3CD84 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 89AF660E1DDDA4A300C3CD84 /* test.png */; };
+		89AF66111DDDA4AC00C3CD84 /* test2.png in Resources */ = {isa = PBXBuildFile; fileRef = 89AF66101DDDA4AC00C3CD84 /* test2.png */; };
+		89AF66131DDDA4DA00C3CD84 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 89AF66121DDDA4DA00C3CD84 /* icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,10 +129,12 @@
 		89AF65F31DDD5AC500C3CD84 /* OpenShare+Weixin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OpenShare+Weixin.h"; sourceTree = "<group>"; };
 		89AF65F41DDD5AC500C3CD84 /* OpenShare+Weixin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OpenShare+Weixin.m"; sourceTree = "<group>"; };
 		89AF65F51DDD5AC500C3CD84 /* OpenShareHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenShareHeader.h; sourceTree = "<group>"; };
-		89AF65FC1DDD751600C3CD84 /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
-		89AF65FD1DDD751600C3CD84 /* logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = logo.gif; sourceTree = "<group>"; };
-		89AF65FE1DDD751600C3CD84 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
-		89AF65FF1DDD751600C3CD84 /* test.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = test.pdf; sourceTree = "<group>"; };
+		89AF66041DDD82FB00C3CD84 /* LLOpenShareTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLOpenShareTool.h; sourceTree = "<group>"; };
+		89AF66051DDD82FB00C3CD84 /* LLOpenShareTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLOpenShareTool.m; sourceTree = "<group>"; };
+		89AF660D1DDD8BD800C3CD84 /* ILSingletom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILSingletom.h; sourceTree = "<group>"; };
+		89AF660E1DDDA4A300C3CD84 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = test.png; path = ../../test.png; sourceTree = "<group>"; };
+		89AF66101DDDA4AC00C3CD84 /* test2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = test2.png; path = ../../test2.png; sourceTree = "<group>"; };
+		89AF66121DDDA4DA00C3CD84 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../../icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,10 +165,6 @@
 		89AF65621DDD568200C3CD84 = {
 			isa = PBXGroup;
 			children = (
-				89AF65FC1DDD751600C3CD84 /* iconfont.ttf */,
-				89AF65FD1DDD751600C3CD84 /* logo.gif */,
-				89AF65FE1DDD751600C3CD84 /* logo.png */,
-				89AF65FF1DDD751600C3CD84 /* test.pdf */,
 				89AF656D1DDD568200C3CD84 /* LLOpenShareTool */,
 				89AF65871DDD568200C3CD84 /* LLOpenShareToolTests */,
 				89AF65921DDD568200C3CD84 /* LLOpenShareToolUITests */,
@@ -228,6 +226,8 @@
 		89AF65A21DDD57A500C3CD84 /* LLopenShareTool */ = {
 			isa = PBXGroup;
 			children = (
+				89AF66041DDD82FB00C3CD84 /* LLOpenShareTool.h */,
+				89AF66051DDD82FB00C3CD84 /* LLOpenShareTool.m */,
 			);
 			path = LLopenShareTool;
 			sourceTree = "<group>";
@@ -235,6 +235,10 @@
 		89AF65A41DDD57A600C3CD84 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				89AF66121DDDA4DA00C3CD84 /* icon.png */,
+				89AF660E1DDDA4A300C3CD84 /* test.png */,
+				89AF66101DDDA4AC00C3CD84 /* test2.png */,
+				89AF660D1DDD8BD800C3CD84 /* ILSingletom.h */,
 				89AF65B01DDD581300C3CD84 /* HYEasyCustomerShareView */,
 				89AF65B11DDD581300C3CD84 /* Openshare */,
 			);
@@ -423,13 +427,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				89AF65DC1DDD59A100C3CD84 /* shareView_qq@3x.png in Resources */,
+				89AF66131DDDA4DA00C3CD84 /* icon.png in Resources */,
 				89AF65DE1DDD59A100C3CD84 /* shareView_qzone@2x.png in Resources */,
+				89AF66111DDDA4AC00C3CD84 /* test2.png in Resources */,
 				89AF65AF1DDD57DF00C3CD84 /* Info.plist in Resources */,
 				89AF65D11DDD59A100C3CD84 /* share_copyLink.png in Resources */,
 				89AF65E11DDD59A100C3CD84 /* shareView_rr@2x.png in Resources */,
 				89AF65D51DDD59A100C3CD84 /* shareView_friend@2x.png in Resources */,
 				89AF65AE1DDD57DF00C3CD84 /* Main.storyboard in Resources */,
-				89AF66011DDD751600C3CD84 /* logo.gif in Resources */,
 				89AF65DF1DDD59A100C3CD84 /* shareView_qzone@3x.png in Resources */,
 				89AF65E31DDD59A100C3CD84 /* shareView_wb.png in Resources */,
 				89AF65E61DDD59A100C3CD84 /* shareView_wx.png in Resources */,
@@ -438,8 +443,6 @@
 				89AF65E21DDD59A100C3CD84 /* shareView_rr@3x.png in Resources */,
 				89AF65E81DDD59A100C3CD84 /* shareView_wx@3x.png in Resources */,
 				89AF65D41DDD59A100C3CD84 /* shareView_friend.png in Resources */,
-				89AF66031DDD751600C3CD84 /* test.pdf in Resources */,
-				89AF66021DDD751600C3CD84 /* logo.png in Resources */,
 				89AF65D61DDD59A100C3CD84 /* shareView_friend@3x.png in Resources */,
 				89AF65E41DDD59A100C3CD84 /* shareView_wb@2x.png in Resources */,
 				89AF65DA1DDD59A100C3CD84 /* shareView_qq.png in Resources */,
@@ -453,7 +456,7 @@
 				89AF65DD1DDD59A100C3CD84 /* shareView_qzone.png in Resources */,
 				89AF65D91DDD59A100C3CD84 /* shareView_msg@3x.png in Resources */,
 				89AF65D31DDD59A100C3CD84 /* share_copyLink@3x.png in Resources */,
-				89AF66001DDD751600C3CD84 /* iconfont.ttf in Resources */,
+				89AF660F1DDDA4A300C3CD84 /* test.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +484,7 @@
 				89AF65B71DDD582500C3CD84 /* HXShareScrollView.m in Sources */,
 				89AF65F61DDD5AC500C3CD84 /* OpenShare.m in Sources */,
 				89AF65761DDD568200C3CD84 /* ViewController.m in Sources */,
+				89AF66061DDD82FB00C3CD84 /* LLOpenShareTool.m in Sources */,
 				89AF65F81DDD5AC500C3CD84 /* OpenShare+QQ.m in Sources */,
 				89AF65FA1DDD5AC500C3CD84 /* OpenShare+Weibo.m in Sources */,
 				89AF65B61DDD582500C3CD84 /* HXEasyCustomShareView.m in Sources */,
@@ -641,7 +645,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/LLOpenShareTool/Other/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhuoyunkeji.LLOpenShareTool;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lauren.LLShareSDKTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -654,7 +658,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/LLOpenShareTool/Other/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhuoyunkeji.LLOpenShareTool;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lauren.LLShareSDKTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

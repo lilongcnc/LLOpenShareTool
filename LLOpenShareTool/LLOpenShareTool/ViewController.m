@@ -7,8 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "HXEasyCustomShareView.h"
-#import "OpenShareHeader.h"
+#import "LLOpenShareTool.h"
+
 
 @interface ViewController ()
 
@@ -34,12 +34,8 @@
  @param sender <#sender description#>
  */
 - (IBAction)registerShareConfig:(id)sender {
-    //第一步：注册key
-    [OpenShare connectQQWithAppId:@"1103194207"];
-    [OpenShare connectWeiboWithAppKey:@"402180334"];
-    [OpenShare connectWeixinWithAppId:@"wxd930ea5d5a258f4f"];
-    [OpenShare connectRenrenWithAppId:@"228525" AndAppKey:@"1dd8cba4215d4d4ab96a49d3058c1d7f"];
-    [OpenShare connectAlipay];//支付宝参数都是服务器端生成的，这里不需要key.
+    [[LLOpenShareTool sharedInstance] registerShareWeChatWithAppID:@"wxf9b19185fadfb46c" sinaWithAppKey:@"192207424" QQWithAppKey:@"192207424"];
+    
 }
 
 /**
@@ -49,58 +45,88 @@
  */
 - (IBAction)shareBtnOnClick:(id)sender {
     
-    [self addGuanjiaShareView];
+    [self registerShareConfig:nil];
     
-}
-
-
-
-- (void)addGuanjiaShareView {
-    NSArray *shareAry = @[@{@"image":@"shareView_wx",
-                            @"title":@"微信"},
-                          @{@"image":@"shareView_friend",
-                            @"title":@"朋友圈"},
-                          @{@"image":@"shareView_qq",
-                            @"title":@"QQ"},
-                          @{@"image":@"shareView_wb",
-                            @"title":@"新浪微博"},
-                          @{@"image":@"shareView_rr",
-                            @"title":@"人人网"},
-                          @{@"image":@"shareView_qzone",
-                            @"title":@"QQ空间"},
-                          @{@"image":@"shareView_msg",
-                            @"title":@"短信"},
-                          @{@"image":@"share_copyLink",
-                            @"title":@"复制链接"}];
+    [[LLOpenShareTool sharedInstance] show];
     
-    
-    HXEasyCustomShareView *shareView = [[HXEasyCustomShareView alloc] initWithFrame:CGRectMake(0, 0, CGMMainScreenWidth, CGMMainScreenHeight)];
-    shareView.backView.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1.0];
-    float height = [shareView getBoderViewHeight:shareAry firstCount:2];
-    shareView.boderView.frame = CGRectMake(0, 0, shareView.frame.size.width, height);
-    shareView.middleLineLabel.hidden = YES;
-    shareView.cancleButton.frame = CGRectMake(shareView.cancleButton.frame.origin.x, shareView.cancleButton.frame.origin.y, shareView.cancleButton.frame.size.width, 54);
-    shareView.cancleButton.titleLabel.font = [UIFont systemFontOfSize:16];
-    [shareView.cancleButton setTitleColor:[UIColor colorWithRed:184/255.0 green:184/255.0 blue:184/255.0 alpha:1.0] forState:UIControlStateNormal];
-    [shareView setShareAry:shareAry delegate:self];
-    
-    [self.view addSubview:shareView];
-}
+    //分享文字
+//    [[LLOpenShareTool sharedInstance] WeChatShareWordWithTitle:@"分享文字" contentDescription:@"老司机带带我!" successFromChat:^{
+//        NSLog(@"分享文字成功");
+//    } failureFromChat:^(NSString *failureInfo) {
+//        NSLog(@"分享文字失败:%@",failureInfo);
+//    } successFromFriend:nil failureFromFriend:nil];
 
-#pragma mark HXEasyCustomShareViewDelegate
-
-- (void)easyCustomShareViewButtonAction:(HXEasyCustomShareView *)shareView title:(NSString *)title {
-    NSLog(@"当前点击:%@",title);
     
-    if ([title isEqualToString:@"微信"]) {
+    //分享链接
+    [[LLOpenShareTool sharedInstance] WeChatShareURLWithTitle:@"分享链接" shareURL:@"www.lilongcnc.cc" urlImage:[UIImage imageNamed:@"test"] successFromChat:^{
+        NSLog(@"分享链接成功");
+    } failureFromChat:^(NSString *failureInfo) {
         
-    }else if([title isEqualToString:@"朋友圈"]){
+        NSLog(@"分享链接失败:%@",failureInfo);
+    } successFromFriend:^{
+        NSLog(@"分享链接成功");
+        
+    } failureFromFriend:^(NSString *failureInfo) {
+        NSLog(@"分享链接失败:%@",failureInfo);
+    }];
     
     
-    }
+    //分享图片
+//    [[LLOpenShareTool sharedInstance] WeChatShareImageWithTitle:@"分享图片" image:[UIImage imageNamed:@"test2"] thumbnailImage:[UIImage imageNamed:@"icon"] successFromChat:^{
+//        
+//        NSLog(@"分享图片成功");
+//    } failureFromChat:^(NSString *failureInfo) {
+//        NSLog(@"分享图片失败:%@",failureInfo);
+//    } successFromFriend:^{
+//        NSLog(@"分享图片成功");
+//    } failureFromFriend:^(NSString *failureInfo) {
+//        NSLog(@"分享图片失败:%@",failureInfo);
+//    }];
+    
+    
+//    //分享音乐
+//    [[LLOpenShareTool sharedInstance] WeChatShareMusicWithTitle:@"分享音乐" mediaDataUrl:@"http://stream20.qqmusic.qq.com/32464723.mp3" musicLink:@"http://tech.qq.com/zt2012/tmtdecode/252.htm" musicThumbnailImage:[UIImage imageNamed:@"icon"] successFromChat:^{
+//        NSLog(@"分享音乐成功");
+//        
+//    } failureFromChat:^(NSString *failureInfo) {
+//        
+//        NSLog(@"分享音乐失败:%@",failureInfo);
+//    } successFromFriend:^{
+//        NSLog(@"分享音乐成功");
+//    } failureFromFriend:^(NSString *failureInfo) {
+//        NSLog(@"分享音乐失败:%@",failureInfo);
+//    }];
+   
+    
+    
+//    //分享视频链接
+//    [[LLOpenShareTool sharedInstance] WeChatShareVideoWithTitle:@"分享视频链接" videoLink:@"http://v.youku.com/v_show/id_XMTM2NTgxMDg4OA==.html" videoImage:[UIImage imageNamed:@"icon"] successFromChat:^{
+//        NSLog(@"分享视频成功");
+//    } failureFromChat:^(NSString *failureInfo) {
+//        NSLog(@"分享视频失败:%@",failureInfo);
+//    } successFromFriend:^{
+//        NSLog(@"分享视频成功");
+//    } failureFromFriend:^(NSString *failureInfo) {
+//        NSLog(@"分享视频失败:%@",failureInfo);
+//    }];
     
     
 }
 
+
+
+
+
+/**
+ 微信支付
+
+ @param sender <#sender description#>
+ */
+- (IBAction)WecahtPayBtnOnClick:(id)sender {
+    
+    
+    
+    
+}
 
 @end
