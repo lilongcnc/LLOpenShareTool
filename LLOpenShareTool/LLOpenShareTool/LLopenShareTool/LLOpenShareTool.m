@@ -14,7 +14,7 @@
 
 #define LLScreenWidth            ([[UIScreen mainScreen] bounds].size.width)
 #define LLScreenHeight           ([[UIScreen mainScreen] bounds].size.height)
-#define LLStrISCanUse(appID)    (appID == nil && [appID isEqualToString:@""])
+#define LLStrISCanUse(appID)    (appID == nil || [appID isEqualToString:@""])
 
 //重写NSLog,Debug模式下打印日志和当前行数
 #if DEBUG
@@ -51,18 +51,16 @@ ILSingleton_M
 
 -(void)registerShareWeChatWithAppID:(NSString *)WxappID sinaWithAppKey:(NSString *)WBappKey QQWithAppKey:(NSString *)QQappKey
 {
+    if(!LLStrISCanUse(WxappID)){
+        [OpenShare connectWeixinWithAppId:WxappID];
+    }
     
-    if(LLStrISCanUse(WxappID))
-        return;
-    [OpenShare connectWeixinWithAppId:WxappID];
-    
-    if(LLStrISCanUse(WBappKey))
-        return;
-    [OpenShare connectWeiboWithAppKey:WBappKey];
-    
-    if(LLStrISCanUse(QQappKey))
-        return;
-    [OpenShare connectQQWithAppId:QQappKey];
+    if(!LLStrISCanUse(WBappKey)){
+        [OpenShare connectWeiboWithAppKey:WBappKey];
+    }
+    if(!LLStrISCanUse(QQappKey)){
+        [OpenShare connectQQWithAppId:QQappKey];
+    }
 //    [OpenShare connectRenrenWithAppId:@"228525" AndAppKey:@"1dd8cba4215d4d4ab96a49d3058c1d7f"];
 }
 
