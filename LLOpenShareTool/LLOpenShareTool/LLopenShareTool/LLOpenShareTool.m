@@ -122,28 +122,20 @@ ILSingleton_M
             NSLog(@"微信分享到会话成功：\n%@",message);
             if (_mySuccessChat)
                 _mySuccessChat();
-            if (_mySuccessFriend)
-                _mySuccessFriend();
             
         } Fail:^(OSMessage *message, NSError *error) {
             NSLog(@"微信分享到会话失败：\n%@\n%@",error,message);
             if (_myFailureChat)
                 _myFailureChat(@"分享失败");
-            if (_myFailureFriend)
-                _myFailureFriend(@"分享失败");
         }];
         
     }else if([title isEqualToString:@"朋友圈"]){
         [OpenShare shareToWeixinTimeline:_myMsg Success:^(OSMessage *message) {
             NSLog(@"微信分享到朋友圈成功：\n%@",message);
-            if (_mySuccessChat)
-                _mySuccessChat();
             if (_mySuccessFriend)
                 _mySuccessFriend();
         } Fail:^(OSMessage *message, NSError *error) {
             NSLog(@"微信分享到朋友圈失败：\n%@\n%@",error,message);
-            if (_myFailureChat)
-                _myFailureChat(@"分享失败");
             if (_myFailureFriend)
                 _myFailureFriend(@"分享失败");
         }];
