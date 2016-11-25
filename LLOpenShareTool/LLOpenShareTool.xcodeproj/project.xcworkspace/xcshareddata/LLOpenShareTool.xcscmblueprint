@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "50F8C43213E190E5F497314FDBD5E1619401244B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E955CF6293378C90EB78E5A094E275F3212B559C" : 9223372036854775807,
+    "50F8C43213E190E5F497314FDBD5E1619401244B" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B1C2C4DE-493D-4F2E-922F-B6A7B2356533",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E955CF6293378C90EB78E5A094E275F3212B559C" : "",
+    "50F8C43213E190E5F497314FDBD5E1619401244B" : "LLOpenShareTool\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "LLOpenShareTool",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "LLOpenShareTool\/LLOpenShareTool.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:lilongcnc\/LLOpenShareTool.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "50F8C43213E190E5F497314FDBD5E1619401244B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:lilongcnc\/TestDemo0322.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E955CF6293378C90EB78E5A094E275F3212B559C"
+    }
+  ]
+}

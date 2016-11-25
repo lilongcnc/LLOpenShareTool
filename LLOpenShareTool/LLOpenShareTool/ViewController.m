@@ -47,7 +47,7 @@
     
     [self registerShareConfig:nil];
     
-    [[LLOpenShareTool sharedInstance] show];
+  
     
     //分享文字
 //    [[LLOpenShareTool sharedInstance] WeChatShareWordWithTitle:@"分享文字" contentDescription:@"老司机带带我!" successFromChat:^{
@@ -110,7 +110,7 @@
 //        NSLog(@"分享视频失败:%@",failureInfo);
 //    }];
     
-    
+      [[LLOpenShareTool sharedInstance] show];
 }
 
 
